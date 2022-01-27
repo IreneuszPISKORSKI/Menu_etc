@@ -1,0 +1,233 @@
+body{
+    background-color: brown;
+    background-image: none;
+    color: rgb(0, 0, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    background-image: url("") ;
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+}
+
+@media (min-width: 600px ) {
+    body{
+        color: rgb(0, 0, 255);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        background-image: url("Photo/planete_nature.webp") ;
+        background-size: cover;
+        background-position: center ;
+        background-attachment: fixed;
+    }
+}
+
+h1{
+    font-size: 60px;
+    color: royalblue;
+    text-shadow: 3px 3px 2px red;
+    text-align: center;
+    margin: 20px;
+}
+
+p{
+    font-style: italic;
+    text-align: left;
+    text-size-adjust: auto;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-left: 20vw;
+    margin-right: 50vw;
+}
+
+    /* menu for mobile */
+#menu {
+        background-color: sandybrown;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+        z-index: 2;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        border-right: solid black;
+        font-size: 22px;
+    }
+
+    /* menu */
+    @media (min-width: 600px ) {
+    
+#menu {
+    background-color: sandybrown;
+    position: fixed;
+    top: 0px;
+    right: 1px;
+    width: 450px;
+    margin-top: 0;
+    padding: 0;
+    z-index: 2;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    border-right: solid black;
+    font-size: 22px;
+}
+
+#menu li{
+    flex: 1;
+    border-top: solid black;
+    border-left: solid black;
+    border-bottom: solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#menu li a:link, #menu li a:visited{
+    text-decoration: none;
+    color: sienna;
+    padding-top: 0;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+#menu li a span{
+    display: block;
+    padding: 0;
+    font-size: 22px;
+}
+@media (hover: hover) {
+    #menu li a span {
+    transform: translateY(100px);
+    transition: 0.4s;
+    }
+    #menu:hover span {
+    transform: translateY(0);
+    }
+    #menu li:nth-child(1) span {
+    transition-delay: 0.0s;
+    background: #90CAF9;
+    }
+    #menu li:nth-child(2) span {
+    transition-delay: 0.05s;
+    background: #80DEEA;
+    }
+    #menu li:nth-child(3) span {
+    transition-delay: 0.1s;
+    background: #A5D6A7;
+    }
+    #menu li:nth-child(4) span {
+    transition-delay: 0.15s;
+    background: #E6EE9C;
+    }
+}
+
+#menu li:nth-child(1) {
+background: #90CAF9;
+}
+
+#menu li:nth-child(2) {
+background: #80DEEA;
+}
+
+#menu li:nth-child(3) {
+background: #A5D6A7;
+}
+
+#menu li:nth-child(4) {
+background: #E6EE9C;
+}
+
+#menu li a:hover{
+    color: rgb(255, 0, 0);
+    text-shadow: 3px 3px 5px black;
+    text-decoration: underline;
+}
+    
+.menu_2{
+    position: absolute;
+    top: 3px;
+    text-align: center;
+}
+    }
+
+/* end of menu */
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+#logo img{
+    max-width: 20vw;
+}
+
+video{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+.items{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(Photo/water.jpg);
+    background-position: center;
+    display: flex;
+    max-width: 40%;
+    justify-content: space-between;
+}
+
+.items a:hover{
+    background-image: url(Photo/eco3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#musique:link, #musique:visited{
+    color: crimson;
+    text-decoration: none;
+}
+
+#musique:hover{
+    background-color: darkblue;
+    color: crimson;
+}
+
+
+
+/* delete below */
+
+#filler{
+    display: flex;
+    flex-direction:column;
+    max-width: 200px;
+    max-height: 300px;
+    margin-block-start: 50px;
+}
+
+#relative1{
+    position: relative;
+    z-index: 1;
+    left: 50px;
+}
+
+#relative2{
+    position: relative;
+    left: 100px;
+    z-index: 1;
+
+}
+
+#relative3{
+    position: relative;
+    left: 150px;
+    z-index: 1;
+
+}
+/* delete till here */
